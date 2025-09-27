@@ -19,6 +19,7 @@ function adicionarProduto() {
 
     nome.value = ""
     preco.value = ""
+    mostrarProdutosTabela(getProdutos())
 }
 
 function mostrarProdutosTabela(listaProdutos) {
