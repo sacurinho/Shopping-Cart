@@ -11,6 +11,8 @@ function mostrarProdutos(listaProdutos) {
     });
 
     document.getElementById("product-grid").innerHTML = produtosHtml
+    document.getElementById("product-count").textContent = `(${listaProdutos.length})`
+
 }  
 
 function encerrarCompra() {
