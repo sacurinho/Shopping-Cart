@@ -15,9 +15,11 @@ function adicionarAoCarrinho(btn) {
 
 function mostrarCarrinho(listaCarrinho) {
     let carrinhoHtml = ""
+    let totalPrice = 0;
 
     listaCarrinho.forEach((produtoNoCarrinho) => {
         carrinhoHtml = carrinhoHtml + renderCarrinho(produtoNoCarrinho)
+        totalPrice +=parseFloat(produtoNoCarrinho.preco.replace(' MZN ' , ''));
     });
 
     document.getElementById("cart-items").innerHTML = carrinhoHtml;
