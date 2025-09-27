@@ -15,6 +15,7 @@ function adicionarAoCarrinho(btn) {
 function encerrarCompra(){
     alert("Compra efetuada com sucesso!")
     setCarrinho([])
+    mostrarCarrinho(getCarrinho())
 }
 
 function alterarQt(btn) {
