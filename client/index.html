@@ -18,7 +18,7 @@
     <header class="header">
         <div class="logo">Loja</div>
         <div class="cart-icon" id="open-cart">
-            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-shopping-cart" id="open-cart"></i>
             <span class="cart-count" id="header-cart-count">0</span>
         </div>
     </header>
@@ -29,23 +29,22 @@
             <span class="count" id="product-count">(1)</span>
         </div>
         <div class="product-grid" id="product-grid">
-            <div class="product-card">
-                <h3>Produto Inicial</h3>
-                <p>MZN 19.99</p>
-                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
-            </div>
+            
         </div>
     </main>
 
-    <div class="cart-overlay" id="cart-overlay">
-        <aside class="cart-sidebar" id="cart-sidebar">
-            <div class="cart-header">
-                <h2>Seu Carrinho</h2>
-                <button class="cart-close" id="close-cart"><i class="fas fa-times"></i></button>
-            </div>
+<div class="cart-overlay" id="cart-overlay">
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <button class="cart-close" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="cart-content">
             <div class="cart-items" id="cart-items">
                 <p class="empty-cart-message">O seu carrinho está vazio.</p>
             </div>
+    
             <div class="cart-summary">
                 <div class="summary-row">
                     <span>Total de Itens:</span>
@@ -57,18 +56,25 @@
                 </div>
                 <button class="checkout-btn" id="checkout-btn">Encerrar Compra</button>
             </div>
-        </aside>
-    </div>
+        </div>
+    </aside>
+</div>
     
     <footer class="footer">
         <div>© 2025. Loja X</div>
         <div>TG1 - PROGWEBIII - G1</div>
     </footer>
 
-    <script src="model.js"></script>
-    <script src="view.js"></script>
-    <script src="controller.js"></script>
-    <script src="script.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+   
+    <script src="./js/carrinho-js/model.js"></script>
+    <script src="./js/carrinho-js/view.js"></script>
+    <script src="./js/carrinho-js/controller.js"></script>
+    <script src="./js/carrinho-js/script.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html>
