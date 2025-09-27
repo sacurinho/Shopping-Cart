@@ -1,0 +1,143 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .admin-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .admin-section h2 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: #b71c1c;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .admin-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .admin-form label {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .admin-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .admin-form button {
+            background-color: #b71c1c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .admin-form button:hover {
+            background-color: #8e1818;
+        }
+
+        .product-table-container {
+            overflow-x: auto;
+        }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .product-table th,
+        .product-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-table th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+
+        .product-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .product-table .actions-cell {
+            white-space: nowrap;
+        }
+
+        .product-table .actions-cell button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .product-table .edit-btn {
+            color: #2196F3;
+        }
+
+        .product-table .delete-btn {
+            color: #F44336;
+        }
+
+        .footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #888;
+        }
