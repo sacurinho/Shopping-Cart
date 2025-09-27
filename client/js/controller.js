@@ -15,8 +15,3 @@ function mostrarProdutos(listaProdutos) {
 
 }  
 
-function encerrarCompra() {
-    alert("Compra efetuada com sucesso!")
-    setCarrinho([])
-    mostrarCarrinho(getCarrinho())
-}
