@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .button-group a {
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #client-button {
+            background-color: #007bff; /* Blue */
+        }
+
+        #client-button:hover {
+            background-color: #0056b3;
+        }
+
+        #admin-button {
+            background-color: #28a745;
+        }
+
+        #admin-button:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bem-vindo a Loja X</h1>
+        <p>Please select your access level:</p>
+
+        <div class="button-group">
+            <a href="client/client.html">
+                <button id="client-button" class="button">Client Access</button>
+            </a>
+            <a href="admin/admin.html">
+                <button id="admin-button" class="button">Admin Login</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
