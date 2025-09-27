@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Cliente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Loja</div>
+        <div class="cart-icon" id="open-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="header-cart-count">0</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="product-list-header">
+            <h1>Nossos Produtos</h1>
+            <span class="count" id="product-count">(1)</span>
+        </div>
+        <div class="product-grid" id="product-grid">
+            <div class="product-card">
+                <h3>Produto Inicial</h3>
+                <p>MZN 19.99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h2>Seu Carrinho</h2>
+                <button class="cart-close" id="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <p class="empty-cart-message">O seu carrinho está vazio.</p>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Total de Itens:</span>
+                    <span id="cart-total-quantity">0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Total:</span>
+                    <span id="cart-total-price">MZN 0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Encerrar Compra</button>
+            </div>
+        </aside>
+    </div>
+    
+    <footer class="footer">
+        <div>© 2025. Loja X</div>
+        <div>TG1 - PROGWEBIII - G1</div>
+    </footer>
+
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
