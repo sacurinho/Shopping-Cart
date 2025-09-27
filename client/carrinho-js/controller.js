@@ -21,4 +21,7 @@ function mostrarCarrinho(listaCarrinho) {
     });
 
     document.getElementById("cart-items").innerHTML = carrinhoHtml;
+    document.getElementById("cart-total-quantity").textContent = listaCarrinho.length
+    document.getElementById("header-cart-count").textContent = `${listaCarrinho.length}`
+
 }  
